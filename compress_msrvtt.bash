@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # FIRST ARGUMENT: DATA_DIR
-DATA_DIR=$1
+DATA_DIR=$1/msrvtt/videos/
 # SAVE PATH
 OUT_DIR="${DATA_DIR}/msrvtt/videos_6fps"
 

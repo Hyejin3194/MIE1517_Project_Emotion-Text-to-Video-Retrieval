@@ -12,7 +12,7 @@ fi
 
 echo "Processing videos started."
 unzip -q MSRVTT.zip -d ${DATA_DIR}
-mkdir -p "${DATA_DIR}/videos/" && find "${DATA_DIR}/MSRVTT/videos/all" -name "video*.mp4" -exec mv {} "${DATA_DIR}/videos/" \;
+mkdir -p "${DATA_DIR}/msrvtt/videos/" && find "${DATA_DIR}/MSRVTT/videos/all" -name "video*.mp4" -exec mv {} "${DATA_DIR}/msrvtt/videos/" \;
 echo "Processing videos completed."
 
 rm -rf "${DATA_DIR}/MSRVTT"
