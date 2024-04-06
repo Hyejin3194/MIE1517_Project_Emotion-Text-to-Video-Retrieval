@@ -1,26 +1,10 @@
 {
-  "train_datasets": 
-    {
-      "name": "demo-train",
-      "vis_format": "video",
-      "txt": "/data2/Hyejin/1517_XPretrain/CLIP-ViP/data/didemo/annotations/descs_ret_train.json",
-      "vis": "/data2/Hyejin/uoft/1517/project/processed"
-    },
-  "val_datasets": [
-
-    {
-      "name": "demo-val",
-      "vis_format": "video",
-      "txt": "/data2/Hyejin/1517_XPretrain/CLIP-ViP/data/didemo/annotations/didemo_test1k.json",
-      "vis": "/data2/Hyejin/uoft/1517/project/processed"
-    }
-  ],
   "inference_datasets": [
     {
       "name": "demo-test",
       "vis_format": "video",
-      "txt": "/data2/Hyejin/1517_XPretrain/CLIP-ViP/data/didemo/annotations/didemo_test1k.json",
-      "vis": "/data2/Hyejin/uoft/1517/project/processed"
+      "txt": "./data/didemo/annotations/didemo_test1k.json",
+      "vis": "./data/demo/videos_6fps"
     }
   ],
 
@@ -34,9 +18,7 @@
   "input_res": [224, 224],
   "max_txt_len": 50,
 
-  "e2e_weights_path": "/data2/Hyejin/1517_XPretrain_HJ/CLIP-ViP/save_dir/IZMbMVUDqz/ckpt/model_best.pt",
-  "_comment": "/data2/Hyejin/1517_XPretrain_HJ/save_dir/OUrtLkrKeh/ckpt/model_best.pt",
-  
+  "e2e_weights_path": "./pretrained_model/pretrain_clipvip_base_32.pt",
   "clip_weights": "openai/clip-vit-base-patch32",
   "clip_config": "openai/clip-vit-base-patch32",
   "clip_vision_additional_config": {

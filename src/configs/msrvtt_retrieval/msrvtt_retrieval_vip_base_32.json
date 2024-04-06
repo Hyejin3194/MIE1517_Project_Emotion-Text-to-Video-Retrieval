@@ -3,16 +3,23 @@
     {
       "name": "msrvtt-9k",
       "vis_format": "video",
-      "txt": "/data2/Hyejin/1517_XPretrain/CLIP-ViP/data/msrvtt/annotations/msrvtt_train6k_emotion.json",
-      "vis": "/data2/Hyejin/1517_XPretrain_HJ/videos_6fps"
+      "txt": "./data/msrvtt/annotations/msrvtt_train6k_emotion.json",
+      "vis": "./data/msrvtt/videos_6fps"
     },
-  
+  "val_datasets": [
+      {
+        "name": "msrvtt-1ka",
+        "vis_format": "video",
+        "txt": "./data/msrvtt/annotations/msrvtt_test1k.json",
+        "vis": "./data/msrvtt/videos_6fps"
+      }
+    ],
   "inference_datasets": [
     {
-      "name": "msrvtt-1ka",
+      "name": "demo",
       "vis_format": "video",
-      "txt": "/data2/Hyejin/1517_XPretrain/CLIP-ViP/data/msrvtt/annotations/msrvtt_test1k.json",
-      "vis": "/data2/Hyejin/1517_XPretrain_HJ/videos_6fps" 
+      "txt": "./data/msrvtt/annotations/msrvtt_test1k.json",
+      "vis": "./data/demo/videos_6fps" 
     }
   ],
 
@@ -28,7 +35,7 @@
   "input_res": [224, 224],
   "max_txt_len": 50,
 
-  "e2e_weights_path": "/data2/Hyejin/1517_Project_group14/CLIP-ViP/pretrained_model/B32/pretrain_clipvip_base_32.pt",
+  "e2e_weights_path": "./pretrained_model/pretrain_clipvip_base_32.pt",
   "clip_weights": "openai/clip-vit-base-patch32",
   "clip_config": "openai/clip-vit-base-patch32",
   "clip_vision_additional_config": {
